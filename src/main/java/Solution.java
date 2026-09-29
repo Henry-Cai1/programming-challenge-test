@@ -5,7 +5,7 @@ public class Solution {
      */
     public int add(int a, int b) {
         //replace 0  with your implementation
-        return 0;
+        return a+b;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
@@ -14,7 +14,7 @@ public class Solution {
      */
     public int subtract(int a, int b) {
         // replace 0  with your implementation
-        return 0;
+        return a-b;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
@@ -23,7 +23,7 @@ public class Solution {
      */
     public int multiply (int a, int b){
         // replace 0  with your implementation
-        return 0;
+        return a*b;
     }
 
     /**
@@ -32,7 +32,7 @@ public class Solution {
 
     public double divide (int a, int b){
         // replace 0.0  with your implementation
-        return 0;
+        return(double) a/b;
     }
 
     /**
@@ -40,7 +40,7 @@ public class Solution {
      */
     public String concatenate (String word1, String word2){
         // replace ""  with your implementation
-        return "";
+        return word1 + word2;
     }
 
 
@@ -53,14 +53,18 @@ public class Solution {
  */
     public int transform(int a) {
         // replace 0 with your implementation
-        return 0;
+        int x = a;
+        x = x + 4;
+        x = x * 3;
+        x = x - a;
+        return x;
     }
 
     public static void main(String[] args) {
         //this main method is for manually debugging
         Solution solution = new Solution();
                         //change "solution" method to any of the methods you would like to test
-        System.out.println(solution.add(1, 2));
+        System.out.println(solution.concatenate ("Henry", "Cai"));
 
     }
 }
